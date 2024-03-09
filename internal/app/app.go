@@ -50,7 +50,8 @@ func (a *App) initDeps(ctx context.Context) error {
 }
 
 func (a *App) initConfig(_ context.Context) error {
-	return config.Load(".env")
+	config.Load(".env")
+	return nil
 }
 
 func (a *App) initServiceProvider(_ context.Context) error {
